@@ -1,12 +1,13 @@
-<p align="center"><img src="docker-sendportal.jpg" height="100px" /></p>
+<p align="center"><img src="docs/docker-sendportal.jpg" height="100px" /></p>
 <h1 align="center">Docker SendPortal</h1>
 
 This repo contains the dockerized version of [SendPortal](https://github.com/mettle/sendportal), an open-source self-hosted email marketing. The docker flow is opinionated but you can use it as reference to make something of your own. All docker-related files are stored inside `docker` directory.
 
 To start the setup:
 
-1. First, you'll need to create a `.env` file based on `.env.sample`. Adjust the content of your `.env` according to your need.
-2. Then, you can run the script: `./run.sh`
+1. Make sure you have docker installed. Check docker documentation if you haven't: https://docs.docker.com/engine/install/
+2. Create a `.env` file based on `.env.sample`. Adjust the content of your `.env` according to your need.
+3. Run the script: `./run.sh`
 
 The script will use environment variables from `.env` and builds a docker image called `sendportal` based on `docker/Dockerfile`. It will also run a redis and nginx container, namely `sendportal_redis` and `sendportal_nginx`. Lastly, the script will trigger the sendportal setup command using `artisan sp:setup` which asks for few details like domain name, database informations (if not provided yet), etc.
 
@@ -14,7 +15,7 @@ Once completed, you can access your SendPortal at http://localhost:9000.
 
 Here's a screenshot of SendPortal running in localhost using docker:
 
-![send portal screenshots](sendportal-screenshot-2020-12-13.jpg)
+![send portal screenshots](docs/sendportal-screenshot-2020-12-13.jpg)
 
 ### Why SendPortal?
 
