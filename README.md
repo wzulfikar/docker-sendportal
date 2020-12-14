@@ -13,13 +13,14 @@ The script will use environment variables from `.env` and builds a docker image 
 
 Once completed, you can access your SendPortal at http://localhost:9000.
 
-Here's a screenshot of SendPortal running in localhost using docker:
+Here's some screenshots of SendPortal running in localhost using docker:
 
 ![send portal screenshots](docs/sendportal-screenshot-2020-12-13.jpg)
+![send portal template example](docs/sendportal-template-example.png)
 
 ### Why SendPortal?
 
-- The interface is clean (it's opinionated, I told you ✌️)
+- The interface is clean
 - The workflow is not so complicated; create campaign, send campaign, monitor campaign, repeat
 - Good alternative if you want a DIY solution and cheaper to mailchimp
 - It's open-source!
@@ -32,7 +33,7 @@ Here's a screenshot of SendPortal running in localhost using docker:
 
 ### Why run.sh?
 
-- It's easier for me because I can just arrange the commands based on my need (again, it's opinionated!)
+- It's easier for me because I can just arrange the commands based on my need (hey, it's opinionated!)
 - I don't have to install docker-compose
 - It works out of the box on most platforms (ubuntu, macOS, or Windows via Git Bash or WSL)
 
