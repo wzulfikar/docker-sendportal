@@ -16,7 +16,7 @@ Once completed, you can access your SendPortal at http://localhost:9000.
 Here's some screenshots of SendPortal running in localhost using docker:
 
 ![send portal screenshots](docs/sendportal-screenshot-2020-12-13.jpg)
-![send portal template example](docs/sendportal-template-example.png)
+![send portal template example](docs/sendportal-template-example.jpg)
 
 ### Why SendPortal?
 
