@@ -28,4 +28,4 @@ docker run -d --rm --name ${CONTAINER_NAME}_nginx \
     nginx
 
 # Run sendportal setup
-docker exec -it ${CONTAINER_NAME} /app/artisan sp:setup
+docker exec -it ${CONTAINER_NAME} /app/artisan sp:install
