@@ -40,6 +40,7 @@ COPY opcache.ini $PHP_INI_DIR
 WORKDIR /app
 RUN git clone https://github.com/mettle/sendportal.git .
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+RUN composer update
 RUN composer install --ignore-platform-reqs
 RUN chmod +x /app/artisan
 RUN chown -R www-data:www-data /app/storage
